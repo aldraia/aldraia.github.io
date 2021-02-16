@@ -87,7 +87,7 @@ h3 {
 	text-indent: -1234em;
 	background: url("images/blogt.png") no-repeat;
 }
-#blog {
+#blog, #bkanji {
 	/*width:38em;*/
 	margin:auto;
 	/*margin: 2em 2em 2em 2em;*/
@@ -98,6 +98,14 @@ h3 {
 
 
 }
+
+#bkanji h2{
+    clear: both;
+	color: #2b6143;
+	padding: 1px;
+	text-align: center;
+}
+
 
 	/* Nav
 ----------------------------------------------- */
@@ -219,6 +227,40 @@ h3 {
 	background-color:rgba(255,255,255,0.5);
     font-size: xx-large;
 	}
+
+ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+}
+
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #02599d88;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 26px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate(5deg);
+  background: #2b614300;
+  border-color: #2b6143;
+  border-width: 6px;
+  border-radius: 44%;
+  text-align: center;
+  box-shadow: 2px 2px 1px #2b614388;
+  border: 1px  solid #2b6143
+}
 
 .post h2{
 	font-style: italic;
