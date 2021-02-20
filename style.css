@@ -68,7 +68,12 @@ h3 {
 	clear: both;
 }
 
-
+#kontainer {
+	width: 99%;
+	border: 1px;
+	margin: 0 auto;
+	clear: both;
+}
 
 
   /* Cap
@@ -87,25 +92,42 @@ h3 {
 	text-indent: -1234em;
 	background: url("images/blogt.png") no-repeat;
 }
-#blog, #bkanji {
+#blog {
 	/*width:38em;*/
 	margin:auto;
 	/*margin: 2em 2em 2em 2em;*/
 	padding: 2em 2em 2em 2em;
 	background:none;
 	clear: both;
-
-
-
 }
+
+#bkanji {
+  clear: both;
+  margin: auto;
+}
+
 
 #bkanji h2{
     clear: both;
 	color: #2b6143;
 	padding: 1px;
 	text-align: center;
+    max-width: 80%;
+    width: max-content;
+    background-color:rgba(255,255,255,0.4);
+    margin: 1em auto;
 }
 
+#bkanji h3 {
+    clear: both;
+	color: #2b6143;
+	padding: 3px;
+	text-align: center;
+    background-color:rgba(255,255,255,0.5);
+    max-width: 80%;
+    width: max-content;
+    margin: 0.75em auto;
+}
 
 	/* Nav
 ----------------------------------------------- */
@@ -223,9 +245,11 @@ h3 {
 .kanji {
 	border-bottom: 0.05em dotted white;
 	padding: 0.15em 0;
-	margin: 1em 0;
+	margin: 0 auto;
 	background-color:rgba(255,255,255,0.5);
     font-size: xx-large;
+    max-width: 90%;
+    width: max-content;
 	}
 
 ol {
